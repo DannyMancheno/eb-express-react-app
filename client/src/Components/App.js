@@ -1,6 +1,9 @@
 
 import react, {useEffect, useState} from 'react';
 
+import Flower from './Flower';
+import '../Styles/App.css';
+
 export default function App() {
 
     let [flower, updateFlower] = useState([{}]);
@@ -13,7 +16,7 @@ export default function App() {
     }, [])
     return (
         <div className='appContainer'>
- 
+            <Flower />
             {(typeof flower === undefined) ? (
                 <p>Loading</p>
             ) : (

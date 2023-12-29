@@ -1,5 +1,9 @@
+
 const express = require('express');
 const app = express();
+
+import path from 'path';
+app.use(express.static(path.join(__dirname, 'client', 'build')));
 
 const PORT = process.env.HTTP_PORT || 4001;
 

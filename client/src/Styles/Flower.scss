@@ -1,0 +1,17 @@
+.flower-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .flower-head{
+        background: rgb(158, 158, 198);
+        border-radius: 30px 30px 50px 50px;
+        height: 50px;
+        width: 50px;
+        
+    }
+    .flower-stem{
+        background: green;
+        height: 80px;
+        width: 10px;
+    }
+}
